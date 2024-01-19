@@ -29,8 +29,9 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-    // JPA 구현체인 hibernate
-    implementation ("org.hibernate:hibernate-core:6.1.7.Final")
+    // JPA
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
 }
 
 tasks.withType<Test> {
