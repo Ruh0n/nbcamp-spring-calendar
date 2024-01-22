@@ -12,13 +12,13 @@
 
 ## API 명세서
 
-| Name     | Method | URL                           | Request Param                      | Request Body                                                                                         | Response                                                                                              |
-|----------|:------:|-------------------------------|------------------------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| 전체 일정 조회 |  GET   | /api/schedule                 |                                    |                                                                                                      | {{"id": "id", <br>"title": "title", <br>"description": "description", <br>"user": "user"},<br> {...}} |
-| 특정 일정 조회 |  GET   | /api/schedule/{id}            | id: {id}                           |                                                                                                      | {"id": "id", <br>"title": "title", <br>"description": "description", <br>"user": "user"}              |
-| 일정 등록    |  POST  | /api/schedule                 |                                    | {"title": "title",<br> "description": "description",<br> "user": "user",<br> "password": "password"} | {"id": "id", <br>"title": "title", <br>"description": "description", <br>"user": "user"}              |
-| 일정 수정    |  PUT   | /api/schedule/{id}            | id: {id}                           | {"title": "title",<br> "description": "description",<br> "user": "user",<br> "password": "password"} | {"id": "id", <br>"title": "title", <br>"description": "description", <br>"user": "user"}              |
-| 일정 삭제    | DELETE | /api/schedule/{id}/{password} | id: {id},<br> password: {password} |                                                                                                      | {id: {id}}                                                                                            |
+| Name     | Method | URL                           | Request Param    | Request Body                                                                                         | Response                                                                                              |
+|----------|:------:|-------------------------------|------------------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| 전체 일정 조회 |  GET   | /api/schedule                 |                  |                                                                                                      | {{"id": "id", <br>"title": "title", <br>"description": "description", <br>"user": "user"},<br> {...}} |
+| 특정 일정 조회 |  GET   | /api/schedule/{id}            | /{id}            |                                                                                                      | {"id": "id", <br>"title": "title", <br>"description": "description", <br>"user": "user"}              |
+| 일정 등록    |  POST  | /api/schedule                 |                  | {"title": "title",<br> "description": "description",<br> "user": "user",<br> "password": "password"} | {"id": "id", <br>"title": "title", <br>"description": "description", <br>"user": "user"}              |
+| 일정 수정    |  PUT   | /api/schedule/{id}            | /{id}            | {"title": "title",<br> "description": "description",<br> "user": "user",<br> "password": "password"} | {"id": "id", <br>"title": "title", <br>"description": "description", <br>"user": "user"}              |
+| 일정 삭제    | DELETE | /api/schedule/{id}/{password} | /{id}/{password} |                                                                                                      | {id: {id}}                                                                                            |
 
 ## ERD
 
